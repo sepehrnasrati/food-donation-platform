@@ -1,0 +1,124 @@
+.sidebar {
+    background-image: linear-gradient(to bottom right, #403b6f, #5e6a9a);
+    height: 100vh;
+    min-width: 300px;
+    max-width: 300px;
+    color: white;
+    overflow-y: auto;
+    z-index: 20;
+}
+
+.sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Lexend';
+    font-weight: 700;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff50;
+    margin-inline: 10px;
+}
+
+.sidebarHeader h1 {
+    margin-top: 10px;
+    line-height: 27.5px;
+}
+
+.closeButton {
+    padding: 4px 12px;
+    background-color: #ffffff20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: #ffffff40;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.sidebarNav{
+    padding-top: 20px;
+    list-style: none;
+}
+
+.sidebarNav li{
+    margin: 5px 15px;
+    font-size: 19px;
+}
+
+.sidebarNav a{
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lexend';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+    border-radius: 8px;
+}
+
+.sidebarNav a:hover{
+    background-color: #2f285c;
+}
+
+.sidebarNav a.active{
+    background-color: #2f285c;
+}
+
+.sidebarNav a svg {
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+}
+
+@media (max-width: 1079px) {
+    .sidebarHeader {
+        padding: 0px;
+        padding-top: 10px;
+        border-bottom: 0;
+        margin-inline: 20px;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+
+    .sidebarNav{
+        padding-top: 0;
+    }
+
+    main {
+        margin-top: 70px; /* height of the nav */
+        width: 100%;
+    }
+
+    .fullscreen {
+        margin-top: 0;
+    }
+
+    .sidebar {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+        position: fixed; /* This will ignore display flex so main content is not moved out of the way and instead the z index means that account info appears on top */
+    }
+}
+
+@media (min-width: 1080px) {
+    .closeButton {
+        visibility: hidden;
+    }
+}

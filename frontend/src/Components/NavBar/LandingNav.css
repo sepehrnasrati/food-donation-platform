@@ -1,0 +1,29 @@
+.landing-nav{
+    list-style: none;
+    display: flex;
+    background-color: #403b6f;
+}
+
+.landing-nav li{
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.landing-nav a{
+    padding: 7px 7px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lexend';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.landing-nav a:hover{
+    background-color: #2f285c;
+}
+
+.landing-nav a.active{
+    background-color: #2f285c;
+}

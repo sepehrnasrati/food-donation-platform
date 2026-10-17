@@ -1,0 +1,36 @@
+.prevDonationContainer {
+    font-family: 'Lexend';
+    width: 100%;
+    display: flex;
+    background: #4d5675;
+    border-radius: 12px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.prevDonationContainer h1 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.prevDonationContainer h2 {
+    font-size: 14px;
+    color: #ffffff99;
+    font-weight: 400;
+}
+
+.foodBankLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.totalContributionsContainer {
+    width: 100px;
+}
+
+.kgDonatedContainer {
+    width: 100px;
+}
