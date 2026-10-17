@@ -1,0 +1,85 @@
+.userListContainer {
+    width: 280px;
+    background-color: #f2f2f2;
+    font-family: "Poppins";
+    padding: 10px 15px;
+}
+
+.chatTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e3dee8;
+    padding: 5px 10px;
+    margin-block: 2px 10px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: #8e8c92;
+}
+
+.recentTitle {
+    color: #999;
+}
+
+.userContainer {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 7px 0;
+    border-radius: 10px;
+}
+
+.userContainer:hover {
+    background-color: #e3dee8;
+    padding: 7px 5px;
+}
+
+.userName {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0.5px solid #00000020;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .userListContainer {
+        background-color: #272b46;
+    }
+
+    .search {
+        background-color: #1e2135;
+        border: 1.5px solid #333853;
+    }
+
+    .search::placeholder {
+        color: #ffffff60;
+    }
+
+    .recentTitle {
+        color: #ffffff60;
+    }
+
+    .userContainer:hover {
+        background-color: #1e2135;
+    }
+}

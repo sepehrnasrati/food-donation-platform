@@ -1,0 +1,77 @@
+.previousDonationCard {
+  font-family: "Lexend";
+  width: 50%;
+  display: flex;
+  background: #4d5675;
+  border-radius: 12px;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 100px;
+}
+
+.previousDonationCard h1 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.previousDonationCard h2 {
+  font-size: 14px;
+  color: #ffffff99;
+  font-weight: 400;
+}
+
+.foodBankLogo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.foodBankName,
+.quantity,
+.donationDate,
+.foodBank {
+  text-align: left;
+  margin: 0;
+}
+
+.foodBankName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.quantity,
+.donationDate,
+.foodBank {
+  font-size: 1rem;
+  color: gray;
+}
+
+.previousDonationCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.donationDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

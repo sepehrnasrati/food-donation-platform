@@ -1,0 +1,291 @@
+.postContainer{ /* This div places the image and rest of the content next to each other */
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    border: 1px solid #00000010;
+}
+
+.individual {
+    background-color: #fff8e4;
+}
+
+.business {
+    background-color: #e7f1ff;
+}
+
+.foodBank {
+    background-color: #eaf9f5;
+}
+
+.mainContentVertical {
+    width: 100%;
+}
+
+.authorName {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.accountType {
+    color: #7f7f7f;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 15px;
+    color: #00000050;
+    margin-bottom: 20px;
+    margin-right: 4px;
+}
+
+.nameDateContianer{ /* Author's name and post date */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.likeShareReply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interactionButton{ /* Each button e.g. like*/
+    display: flex;
+    margin-right: 20px;
+}
+
+.profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0.5px solid #00000020;
+    cursor: pointer;
+}
+
+.postBodyText {
+    margin-block: 8px;
+    font-weight: 400;
+    white-space: pre-line; /* This places enters on a new line  */
+}
+
+.postImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-right: 45px;
+}
+
+.postImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.interactionButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    border-radius: 4px;
+    padding-inline: 3px;
+    color: #979797;
+}
+
+.addLike {
+    /*color: #979797;*/
+    color: #979797;
+}
+
+.removeLike {
+    /*color: #ffbc2e;*/
+    color: #ffbc2e;
+}
+
+.summariseButton {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: #a3b08f50 solid 1px;
+    font-size: 14px;
+}
+
+.summariseButton h3 {
+    font-weight: 500;
+    background: linear-gradient(to right, #0894ff, #c959dd, #ff2e54, #ff9004);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.summariseButton:hover {
+    background: linear-gradient(to right, #0894ff, #c959dd, #ff2e54, #ff9004);
+    background-size: 102%;
+    background-position: -1px;
+    border-color: #ffffff00;
+}
+
+.summariseButton:hover h3 {
+    -webkit-text-fill-color: white;
+}
+
+.summariseButton:hover svg {
+    color: white;
+}
+
+.summariseButton svg {
+    color: #0894ff;
+}
+
+.interactionButton svg {
+    font-size: 15px;
+}
+
+.interactionButton h3 {
+    font-weight: 400;
+}
+
+.addLike:hover {
+    color: #ffbc2e;
+    filter: drop-shadow(0 0 10px #ffbc2e);
+}
+
+.removeLike:hover {
+    color: #ffbc2e;
+    filter: drop-shadow(0 0 10px #ffbc2e);
+}
+
+.share:hover {
+    color: #00ba7c;
+    filter: drop-shadow(0 0 10px #00ba7c);
+}
+
+.replyButton:hover {
+    color: #006eff;
+    filter: drop-shadow(0 0 10px #61dafba0);
+}
+
+.replyButton {
+    margin-right: 0;
+}
+
+.postSummaryTitleContainer {
+    margin-block: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.postSummaryContainer h3 {
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    background: linear-gradient(to right, #0894ff, #c959dd, #ff2e54, #ff9004);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.postSummaryTitleContainer svg {
+    color: #0894ff;
+}
+
+.postSummaryContainer p {
+    font-family: "Poppins";
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+.postSummaryContainer {
+    margin-bottom: 8px;
+    border-top: #d9d9d9 solid 1.5px;
+}
+
+.likeShareReplyContainer {
+    background-color: #ffffffdf;
+    border: #a3b08f50 solid 1px;
+    display: flex;
+    gap: 10px;
+    padding: 4px 15px;
+    border-radius: 50px;
+}
+
+.map {
+    width: 100%;
+    height: 280px; 
+    margin-bottom: 13px; 
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {  
+    .postContainer{
+        background-color: #1f2235;
+        border: 2px solid #ffffff21;
+    }
+
+    .individual {
+        background-color: #77614279;
+    }
+    
+    .business {
+        background-color: #2a2f4fb2;
+    }
+    
+    .foodBank {
+        background-color: #1a554598;
+    }
+    
+    .likeShareReplyContainer {
+        background-color: #00000047;
+        border-color: #ffffff36;
+    }
+
+    .postSummaryContainer {
+        border-top: #ffffff21 solid 2px;
+    }
+
+    .accountType {
+        color: #ffffff76;
+    }
+
+    .date {
+        color: #ffffff53;
+    }
+
+    .map {
+        border: 1px solid #ffffff36;
+    }
+
+    .interactionButton {
+        color: #ffffff76;
+    }
+
+    .summariseButton {
+        background-color: #00000047;
+        border: #ffffff36 solid 1px;
+    }
+    
+    .removeLike {
+        color: #ffbc2e;
+    }
+}

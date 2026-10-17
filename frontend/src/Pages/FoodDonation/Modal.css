@@ -1,0 +1,161 @@
+.donation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.donation-modal-content {
+  background-color: #4d5675;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+button.donation-close {
+  background: none;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.donation-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="date"],
+.donation-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #000000;
+}
+
+button.donation-submit {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.donation-submit:hover {
+  background-color: #0056b3;
+}
+
+button.donation-cancel {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px 15px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.donation-cancel:hover {
+  background-color: #c9302c;
+}
+
+.donation-error {
+  color: rgb(69, 8, 8);
+}
+
+.donation-edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.donation-edit-modal-content {
+  background-color: #4d5675;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+button.donation-edit-close {
+  background: none;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.donation-edit-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.donation-edit-form input[type="text"],
+.donation-edit-form input[type="date"],
+.donation-edit-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #000000;
+}
+
+button.donation-edit-submit {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.donation-edit-submit:hover {
+  background-color: #0056b3;
+}
+
+button.donation-edit-cancel {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px 15px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.donation-edit-cancel:hover {
+  background-color: #c9302c;
+}
+
+.donation-edit-error {
+  color: rgb(69, 8, 8);
+}

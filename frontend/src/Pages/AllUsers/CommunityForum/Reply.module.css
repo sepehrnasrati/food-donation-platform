@@ -1,0 +1,43 @@
+.replyContainer {
+    display: flex;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+}
+
+.replyAuthorName {
+    font-size: 15.5px;
+}
+
+.replyText {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    white-space: pre-line; /* This places enters on a new line  */
+}
+
+.replyDate {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.replyPostNameDateContianer {
+    display: flex;
+    flex-direction: column;
+}
+
+.replyNameDateContianer {
+    display: flex;
+    align-items: center;
+}
+
+.replyAuthorDateSeperator {
+    margin-inline: 7px;
+    color: #495a6a;
+    font-size: 17.5px;
+}
+
+.replyProfilePic {
+    margin-left: 0px;
+}

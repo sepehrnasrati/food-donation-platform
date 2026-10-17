@@ -1,0 +1,56 @@
+.mainChatLayout {
+    display: flex;
+}
+
+.chatViewContainer {
+    /* subtracting width of user/chat list */
+    width: calc(100% - 280px);
+    overflow-x: hidden;
+    background: url(https://i.imgur.com/I2fMG32.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 280px);
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px #d9d9d983;
+    border-radius: 100%;
+    font-size: 75px;
+    width: 120px;
+    height: 120px;
+}
+
+.iconContainer svg {
+    color: #ffffff;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.25), rgba(217, 217, 217, 1));
+}
+
+.selectContainer p {
+    font-family: "Poppins";
+    margin-top: 12.5px;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .chatViewContainer {
+        background: url(https://i.imgur.com/rgvHTX7.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .iconContainer svg {
+        color: #13132d;
+    }
+}

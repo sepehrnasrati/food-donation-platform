@@ -1,0 +1,81 @@
+.container {
+    background-color: #f5f5f5;
+    height: calc(100vh - 54px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    font-family: "Poppins";
+    border-radius: 17px;
+    padding: 15px;
+    width: 600px;
+    margin-inline: 15px;
+}
+
+.logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    filter: brightness(95%);
+}
+
+.title {
+    font-weight: 600;
+    margin-block: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailInput {
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 15px;
+    border: 1px solid #00000035;
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.passwordInput {
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 15px;
+    border: 1px solid #00000035;
+    border-radius: 10px;
+    padding: 8px;
+    margin-block: 15px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.button {
+    width: 300px;
+    font-family: "Poppins";
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #0a84ff;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #0a72da;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}

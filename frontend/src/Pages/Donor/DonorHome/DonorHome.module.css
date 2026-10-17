@@ -1,0 +1,405 @@
+.donorHome {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Lexend';
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: 'Lexend';
+  font-size: 18px;
+  color: #666;
+}
+
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: 'Lexend';
+  font-size: 18px;
+  color: #666;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2d2a55;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header h1 {
+    color: #eaeaea;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Main stats cards */
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.statCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.statCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0;
+}
+
+.statIcon {
+  color: #403b6f;
+  width: 22px;
+  height: 22px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #403b6f;
+}
+
+.statDescription {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Section layout for donations and expiry items */
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 950px) {
+  .sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Recent donations */
+.donationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.donationItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f0f2f8;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e4f0;
+}
+
+.donationItem:hover {
+  background-color: #e5e9f5;
+}
+
+.donationLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 1px solid #eee;
+}
+
+.donationDetails {
+  flex: 1;
+}
+
+.donationDetails h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.donationItems {
+  color: #555;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.donationMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Expiry items */
+.expiryItemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expiryItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f0f2f8;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e4f0;
+}
+
+.expiryItem:hover {
+  background-color: #e5e9f5;
+}
+
+.daysLeft {
+  background-color: #d5dcef;
+  color: #2a2d4a;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 15px;
+  min-width: 65px;
+  text-align: center;
+}
+
+.daysLeft.urgent {
+  background-color: #fdd9d7;
+  color: #c62828;
+}
+
+.expiryDetails {
+  flex: 1;
+}
+
+.expiryDetails h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.expiryDate {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Action cards */
+.actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.actionCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.actionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.actionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.actionIcon {
+  color: #403b6f;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.actionText {
+  margin-bottom: 20px;
+}
+
+.actionText h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.actionText p {
+  color: #555;
+  font-size: 14px;
+}
+
+.actionButton {
+  background-color: #403b6f;
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #2f285c;
+}
+
+/* Impact section */
+.impactStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.impactItem {
+  padding: 15px;
+  background-color: #f0f2f8;
+  border-radius: 10px;
+  border: 1px solid #e0e4f0;
+}
+
+.impactItem h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.impactValue {
+  font-size: 18px;
+  font-weight: 500;
+  color: #403b6f;
+  margin-bottom: 8px;
+}
+
+.impactDescription, .impactFact {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Section footers */
+.sectionFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.viewAllButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 8px 15px;
+  background-color: #2f285c;
+}
+
+.iconRight {
+  width: 14px;
+  height: 14px;
+}
+
+.noDataMessage {
+  padding: 30px;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .donorHome {
+    color: #f3f3f3;
+  }
+  
+  .subtitle {
+    color: #ccc;
+  }
+  
+  .statDescription {
+    color: #ccc;
+  }
+  
+  .donationItem, .expiryItem, .impactItem {
+    background-color: #2d314c;
+    border: 1px solid #383c59;
+  }
+  
+  .donationItem:hover, .expiryItem:hover {
+    background-color: #333853;
+  }
+  
+  .donationItems {
+    color: #dadada;
+  }
+  
+  .donationMeta {
+    color: #bbb;
+  }
+  
+  .daysLeft {
+    background-color: #3d4266;
+    color: #c5cbef;
+  }
+  
+  .daysLeft.urgent {
+    background-color: #5d2a29;
+    color: #ffb3b0;
+  }
+  
+  .expiryDate {
+    color: #dadada;
+  }
+  
+  .actionText p {
+    color: #dadada;
+  }
+  
+  .impactDescription, .impactFact {
+    color: #dadada;
+  }
+  
+  .noDataMessage {
+    color: #bbb;
+  }
+}

@@ -1,0 +1,193 @@
+.messagesContainer {
+    box-sizing: border-box;
+    margin-inline: 65px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    height: calc(100% - 170px);
+}
+
+.userInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 65px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 85px;
+    box-shadow: 0 30px 25px 0 #ffffff;
+    translate: 0 0;
+}
+
+.infoConatiner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+.name {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 1px;
+}
+
+.accountType {
+    border: 1px solid #00000020;
+    border-radius: 15px;
+    width: fit-content;
+    color: #00000070;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 7px;
+}
+
+.individual {
+    background-color: #fff8e4;
+}
+
+.business {
+    background-color: #e7f1ff;
+}
+
+.foodBank {
+    background-color: #eaf9f5;
+}
+
+.profilePic {
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    border: 1px #e7e7e7 solid;
+}
+
+.viewProfileButton {
+    background-color: #f2f2f2;
+    border: #00000015 solid 2px;
+    color: black;
+    font-family: "Poppins";
+    font-size: 14px;
+    height: 40px;
+    padding: 0px 8px;
+    height: 31px;
+    border-radius: 9px;
+}
+
+.viewProfileButton:hover {
+    background-color: #00000025;
+}
+
+.message {
+    max-width: 400px;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 7px;
+    font-family: "Poppins";
+    word-wrap: break-word;
+    line-height: 21px;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: rgba(220, 220, 220, 0.575);
+}
+
+.sent {
+    align-self: flex-end;
+    color: white;
+    background-image: linear-gradient(to right, #315ddfa5 , #747ace);
+}
+.inputContainer {
+    background-color: #00000010;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 5px;
+    margin-inline: 65px;
+}
+
+.inputContainer input {
+    background-color: #00000000;
+    margin-top: 9px;
+    height: 40px;
+    margin-bottom: 0;
+    font-family: "Poppins";
+    font-size: 15.7px;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.inputContainer input::placeholder {
+    color: #7f7f7f;
+}
+
+.inputContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .userInfoContainer {
+        background: linear-gradient(to top, #3b3c4d 1%, #1e2135);
+        box-shadow: 0 30px 25px 25px #3b3c4d;
+    }
+
+    .profilePic {
+        border: 1px #ffffff25 solid;
+    }
+
+    .accountType {
+        color: #ffffff76;
+        border: 1px solid #ffffff10;
+    }
+
+    .individual {
+        background-color: #77614279;
+    }
+    
+    .business {
+        background-color: #2a2f4fb2;
+    }
+    
+    .foodBank {
+        background-color: #1a554598;
+    }
+
+    .received {
+        background-color: #2e303d;
+    }
+
+    .sent {
+        background-image: linear-gradient(to right, #575b93 , #274bb7a5);
+    }
+
+    .inputContainer {
+        background-color: #ffffff15;
+    }
+
+    .inputContainer input::placeholder {
+        color: #ffffff60;
+    }
+
+    .viewProfileButton {
+        background-color: #4c506d;
+        border: rgb(85, 89, 103) solid 2px;
+        color: white;
+    }
+    
+    .viewProfileButton:hover {
+        background-color: #333748;
+    }
+}

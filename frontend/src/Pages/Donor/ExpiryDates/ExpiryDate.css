@@ -1,0 +1,115 @@
+.expiry-date-container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+    margin: auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #4b2bb4, #8b5cf6);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.expiry-date-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  background-color: white;
+  color: #111827;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #fbbf24;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f59e0b;
+}
+
+.sort-controls {
+  margin: 1rem 0;
+}
+
+.sort-controls select {
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #fbbf24;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+}
+
+.expiry-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expiry-item {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+}
+
+.food-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.expiry-info {
+  font-size: 0.95rem;
+}
+
+
+.expiry-alert {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.expiry-alert.warning {
+  background-color: #facc15;
+  color: #92400e;
+}
+
+.expiry-alert.expired {
+  background-color: #ef4444;
+  color: white;
+}
+
+.expiry-alert.safe {
+  background-color: #4ade80;
+  color: #065f46;
+}

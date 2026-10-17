@@ -1,0 +1,291 @@
+.signedOutView {/* Width etc when there is no sidebar */
+    width: 100%;
+    height: calc(100vh - 54px); /* 54px is the value of navbar */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.communityMain {
+    display: flex;
+    justify-content: center;
+}
+
+.generalCommunityTitle {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 28px;
+    text-align: left;
+    width: 100%;
+    margin-block: 17px;
+}
+
+.communityForumContainer {
+    margin-inline: 10%;
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.draftingLayersContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.postDraftContainer {
+    position: absolute;
+    /* the first 3 lines place this on top of draftingLayersContainer */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f4f1f1;
+    padding: 7px;
+    border: 1px solid #dcd9d9;
+    border-radius: 18px;
+}
+
+.textfieldContainer {
+    display: flex;
+    gap: 8px;
+    background-color: #00000000;
+}
+
+.profilePic {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    border: 1px solid #dcd9d9;
+}
+
+.textfield {
+    font-family: 'Poppins';
+    background-color: white;
+    border-radius: 14px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-style: none;
+    resize: none;
+    height: 140px;
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    border: 1px solid #dcd9d9;
+}
+
+.textfield:focus {
+    outline: none;
+}
+
+.postWritingButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.postButtons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postButton {
+    background-color: #0a84ff;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    padding: 3.5px 17.5px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Poppins";
+    height: 30.5px;
+}
+
+.postButton:hover {
+    background-color: #006dd9;
+}
+
+.imageButton {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 23px;
+    color: #717171;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.imageButton svg {
+    font-size: 17px;
+    margin-left: 4px;
+}
+
+.imageButton:hover {
+    color: #000000;
+}
+
+.locationButton {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 23px;
+    color: #717171;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.locationButton svg {
+    font-size: 17px;
+    margin-left: 4px;
+}
+
+.locationButton:hover {
+    color: #000000;
+}
+
+.AIRewrite {
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    background: linear-gradient(45deg, #429aff, #ff4365, #ffae45);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+}
+
+.AIRewrite:hover {
+    filter: brightness(90%);
+}
+
+.imagePreview {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    object-position: center;
+    border: 0.5px solid #bbb;
+}
+
+.imageUploadOptions {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    height: 75px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;
+    background-color: #cee0f4;
+}
+
+.locationInputContainer {
+    margin-top: 10px;
+    font-family: "Poppins";
+}
+
+.locationInputTitle {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.locationInput {
+    max-width: 185px;
+    padding: 6px;
+    border: 1px solid #dcd9d9;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-left: 2px;
+}
+
+.map {
+    width: 270px; 
+    height: 200px; 
+    margin-top: 10px;
+    margin-left: 4px; 
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.optionsContainer {
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 15.5px;
+    display: flex;
+    justify-content: flex-end;
+    margin-block: 9px;
+    margin-right: 2px;
+    gap: 3px;
+}
+
+.optionsContainer button {
+    background-color: #00000000;
+}
+
+.recentButtonActive, .popularButtonActive {
+    color: #000000;
+}
+.recentButtonInactive, .popularButtonInactive {
+    color: #a5a5a5;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .postDraftContainer {
+        background-color: #1e2135;
+        border: 1px solid #333748;
+    }
+
+    .textfield {
+        color: white;
+        background-color: #171928;
+        border: 1px solid #333748;
+    }
+
+    .AIRewrite {
+        filter: brightness(80%);
+    }
+
+    .postButton {
+        filter: brightness(90%);
+    }
+
+    .locationButton {
+        color: #ffffff76;
+    }
+
+    .imageButton {
+        color: #ffffff76;
+    }
+
+    .locationButton:hover {
+        color: #ffffffc9;
+    }
+
+    .imageButton:hover {
+        color: #ffffffc9;
+    }
+
+    .locationInput {
+        background-color: #171928;
+        border: 1px solid #333748;
+    }
+
+    .map {
+        border: 1px solid #ffffff36;
+    }
+
+    .recentButtonActive, .popularButtonActive {
+        color: #ffffffd7;
+    }
+    .recentButtonInactive, .popularButtonInactive {
+        color: #ffffff76;
+    }
+}
+
+@media (max-width: 1079px) {
+    .signedOutView {
+        margin-top: 0;
+    }
+}

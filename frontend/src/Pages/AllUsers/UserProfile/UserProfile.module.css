@@ -1,0 +1,184 @@
+.signedOutView {
+    /* Width etc when there is no sidebar */
+    width: 100%;
+    height: calc(100vh - 54px);
+    /* 54px is the value of navbar */
+    ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.mainContainer {
+    background-color: #f3f2f7;
+    display: flex;
+    justify-content: center;
+}
+
+.contentContainer {
+    width: 900px;
+    margin-top: 50px;
+    margin-inline: 100px;
+}
+
+.profileContainer {
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.banner {
+    height: 180px;
+    background-image: linear-gradient(45deg, #85D8CE, #085078);
+}
+
+.accountInfoContainer {
+    display: flex;
+}
+
+/* Profile pic, join date, email etc start. here */
+.contactInfoContainer {
+    width: 220px;
+    padding: 0 0 0 15px;
+    transform: translateY(-50px);
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilePic {
+    width: 150px;
+    border-radius: 100%;
+    padding: 6.5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 20px;
+    margin-bottom: 23px;
+}
+
+.accountTypeLabel div {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.accountTypeLabel {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.individual {
+    background-color: #ffecb9;
+}
+
+.business {
+    background-color: #d5e6ff;
+}
+
+.foodbank {
+    background-color: #caeae1;
+}
+
+.dateEmailContainer {
+    color: #747474;
+    width: 100%;
+}
+
+.dateEmailContainer div {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.dateEmailContainer div p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dateEmailContainer div svg {
+    width: 20px;
+    margin-right: 12px;
+}
+
+.dateEmailContainer button {
+    width: 100%;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.chatButton {
+    background: linear-gradient(to right, #6ecfff, #0894ff);
+}
+
+.donateButton {
+    background: linear-gradient(to right, #15d6b9, #00ca62);
+}
+
+.dateEmailContainer button:hover {
+    filter: brightness(90%);
+}
+
+/* Account name and about start here */
+.nameAboutContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.nameAboutContainer h1 {
+    font-family: 'Poppins';
+    font-size: 26.5px;
+    font-weight: 600;
+}
+
+.nameAboutContainer h2 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.nameAboutContainer p {
+    font-family: 'Poppins';
+}
+
+@media (max-width: 1079px) {
+    .signedOutView {
+        margin-top: 0;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .mainContainer {
+        background-color: #14152b;
+    }
+
+    .accountInfoContainer {
+        background-color: #1e2135;
+        border: 1px solid #333748;
+    }
+
+    .dateEmailContainer {
+        color: #ffffff76;
+    }
+
+    .individual {
+        background-color: #77614279;
+    }
+    
+    .business {
+        background-color: #2a2f4f;
+    }
+    
+    .foodbank {
+        background-color: #1a554598;
+    }
+}

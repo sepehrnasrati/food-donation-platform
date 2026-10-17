@@ -1,0 +1,184 @@
+.rewriteContainer {
+  position: absolute;
+  /* the first 3 lines place this on top of draftingLayersContainer */
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  /* brings rotating background to the centre */
+  padding: 8px 13px;
+  box-sizing: border-box;
+}
+
+p {
+  white-space: pre-line;
+}
+
+.loading {
+  position: relative;
+  z-index: 2;
+  font-family: 'Lexend';
+  font-size: 19px;
+}
+
+.loading svg {
+  font-size: 16px;
+  margin-right: 5px;
+  animation: loading 0.75s steps(2) infinite;
+}
+
+@keyframes loading {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    color: var(--color1);
+  }
+}
+
+.rotatingBackground {
+  position: absolute;
+  top: 50%;
+  /* Vertically center */
+  left: 50%;
+  /* Horizontally center */
+  transform: translate(-50%, -50%);
+  /* Center */
+  width: 800px;
+  height: 250px;
+  background: conic-gradient(from 0deg, #ffb300, #00aaff99, #ff00a699);
+  animation: BackgroundRotate 2.5s linear infinite;
+  z-index: 1;
+  /* Ensure it stays behind the text */
+}
+
+@keyframes BackgroundRotate {
+  0% {
+    filter: hue-rotate(0deg) blur(100px) opacity(0.35);
+    /* essentially shifts all the colors of the element along the color spectrum */
+  }
+
+  100% {
+    filter: hue-rotate(360deg) blur(100px) opacity(0.35);
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  font-family: 'Lexend';
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.buttonContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.backButton {
+  font-size: 15px;
+  padding: 3px 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border: #d1d1d1 solid 0.5px;
+  border-radius: 7px;
+}
+
+.backButton:hover {
+  background-color: #d1d1d1;
+}
+
+.replaceButton {
+  font-size: 15px;
+  padding: 3px 10px;
+  background-color: #0a84ff;
+  color: white;
+  border-radius: 7px;
+}
+
+.replaceButton:hover {
+  background-color: #006dd9;
+}
+
+/* text animation CSS starts here */
+.generatedText span {
+  opacity: 0;
+  /* Initially transparent text */
+  animation: generateTextAnimation 0.4s forwards;
+}
+
+:root {
+  --color1: #000;
+  --color2: #7b4400;
+  --color3: #ff2e54;
+  --color4: #c959dd;
+  --color5: #0894ff;
+}
+
+@keyframes generateTextAnimation {
+  0% {
+    opacity: 1;
+    color: var(--color5);
+  }
+
+  40% {
+    opacity: 1;
+    color: var(--color4);
+  }
+
+  60% {
+    opacity: 1;
+    color: var(--color3);
+  }
+
+  80% {
+    opacity: 1;
+    color: var(--color2);
+  }
+
+  100% {
+    opacity: 1;
+    color: var(--color1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color1: #fff;
+    --color2: #7cc6ff;
+    --color3: #5ba6fc;
+    --color4: #cb49ff;
+    --color5: #ffb341;
+  }
+
+  .rewriteContainer {
+    background-color: #171928;
+    border: 1px solid #333748;
+  }
+
+  .backButton {
+    background-color: #00000047;
+    border-color: #ffffff36;
+    color: #ffffff;
+  }
+
+  .backButton:hover {
+    background-color: #9c9c9c21;
+  }
+}

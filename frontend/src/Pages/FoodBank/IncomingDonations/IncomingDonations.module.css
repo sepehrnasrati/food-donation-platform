@@ -1,0 +1,131 @@
+/* Main container styles */
+.container {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.errorContainer {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Header section styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+.text{
+    text-align: left;
+}
+
+/* Food bank card styles */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+/* Content section styles */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.foodBankName {
+    font-size: 25px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.description {
+    color: #666;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+
+/* Button styles */
+.donateButton1 {
+    width: 50%;
+    padding: 12px;
+    margin: 0 10px 0 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.donateButton1:hover {
+    background-color: #45a049;
+}
+
+
+.donateButton2 {
+    width: 50%;
+    padding: 12px;
+    margin: 0 0 0 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.donateButton2:hover {
+    background-color: #bc0000;
+}
+
+.buttonBox{
+    display: flex;
+    padding: 5px;
+}
+
+
+.emptyMessage {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+  }

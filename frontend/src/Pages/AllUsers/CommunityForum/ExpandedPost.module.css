@@ -1,0 +1,131 @@
+.fullPostContainer {
+    margin-inline: 10%;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.writeReplyContainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.replyProfilePic {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    margin-right: 8px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.writeReply {
+    display: flex;
+    align-items: flex-end;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 13px;
+    border: 1px solid #d9d9d9;
+}
+
+.postReplyTextfield {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    background-color: transparent;
+    border-style: none;
+    resize: none;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    height: 70px;
+}
+
+.postReplyTextfield:focus {
+    outline: none;
+}
+
+.postReplyButton {
+    background-color: #0a84ff;
+    border-style: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    margin-left: 8px;
+}
+
+.postReplyButton:hover {
+    background-color: #006dd9;
+}
+
+.postRepliesSection {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.noRepliesContainer {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noRepliesImage {
+    height: 85px;
+    width: 85px;
+}
+
+.noRepliesMessage {
+    font-family: 'Poppins';
+    color: #00000060;
+    margin-top: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .writeReply {
+        border: 2px solid #333748;
+        background-color: #1f2235;
+    }
+
+    .postReplyTextfield {
+        color: #fff;
+    }
+
+    .noRepliesImage {
+        filter: opacity(0.70);
+    }
+
+    .noRepliesMessage {
+        color: #ffffff90;
+    }
+
+    .postRepliesSection {
+        border: 2px solid #333748;
+        background-color: #1f2235;
+    }
+
+    .date {
+        color: #757575;
+    }
+}

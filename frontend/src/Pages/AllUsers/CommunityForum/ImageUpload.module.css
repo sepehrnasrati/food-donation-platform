@@ -1,0 +1,160 @@
+.container {
+    /* the first 3 lines place this on top of draftingLayersContainer */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f1f1;
+    border: 1px solid #dcd9d9;
+    box-sizing: border-box;
+    border-radius: 18px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    justify-content: space-between;
+}
+
+.uploadButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.uploadButton:hover {
+    background-color: #dcd9d975;
+}
+
+.generateButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.generateButton:hover {
+    background-color: #dcd9d975;
+}
+
+.uploadIconContainer {
+    background-color: #dcd9d9;
+    font-size: 35px;
+    padding: 0px 7px;
+    border-radius: 12px;
+}
+
+.uploadIconContainer svg {
+    color: #dcd9d9;
+    background-image: linear-gradient(135deg, #00b0f0, #0575e6 83%);
+}
+
+.generateIconContainer {
+    background-color: #dcd9d9;
+    font-size: 35px;
+    padding: 0px 7px;
+    border-radius: 12px;
+}
+
+.generateIconContainer svg {
+    color: #dcd9d9;
+    background-image: linear-gradient(45deg, #0a84ff, #c959dd, #ff2e54, #ff9004);
+}
+
+.uploadTextContainer h1 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.uploadTextContainer p {
+    font-size: 15px;
+    color: #797878;
+}
+
+.generateTextContainer h1 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.generateTextContainer p {
+    font-size: 15px;
+    color: #797878;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #dcd9d9;
+    margin-block: 8px;
+}
+
+.backButton {
+    width: max-content;
+    margin-top: 5px;
+    font-size: 13px;
+    padding: 3px 7px;
+    background-color: #ffffff;
+    color: #000;
+    border: #dcd9d9 solid 0.5px;
+    border-radius: 7px;
+}
+
+.backButton:hover {
+    background-color: #dcd9d9;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .container {
+        background-color: #1e2135;
+        border: 1px solid #333748;
+    }
+
+    .backButton {
+        color: #ffffff;
+        background-color: #4a4a4a28;
+        border-color: #ffffff36;
+    }
+
+    .backButton:hover {
+        background-color: #c7c5c521;
+    }
+
+    .uploadIconContainer {
+        background-color: #36404f;
+    }
+    
+    .generateIconContainer {
+        background-color: #36404f;
+    }
+
+    .uploadIconContainer svg {
+        color: #36404f;
+    }
+
+    .generateIconContainer svg {
+        color: #36404f;
+    }
+
+    .line {
+        background-color: #333748;
+    }
+
+    .uploadTextContainer p {
+        color: #ffffff50;
+    }
+
+    .generateTextContainer p {
+        color: #ffffff50;
+    }
+
+    .generateButton:hover {
+        background-color: #333748;
+    }
+
+    .uploadButton:hover {
+        background-color: #333748;
+    }
+}
